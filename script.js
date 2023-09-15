@@ -23,6 +23,20 @@ arr.reverse();
 // const cars = ["BMW", "Volvo", "Saab", "Ford"];
 let text = "";
 for (let i = 0; i < arr.length; i++) {
+  var isPrime = true;
+  for (var j = 2; j < arr[i]; j++) {
+    if (i % j === 0) {
+      isPrime = false;
+      break;
+    }
+  }
+  if (arr[i] === 1) {
+    isPrime = false;
+  }
+  if (isPrime) {
+    continue;
+  }
+
   if (arr[i] % 3 === 0 && arr[i] % 5 === 0) {
     arr[i] = "FooBar";
   } else if (arr[i] % 3 === 0) {
