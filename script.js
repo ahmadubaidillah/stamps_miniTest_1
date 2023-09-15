@@ -20,7 +20,7 @@ arr.reverse();
 // } else if (text % 5 === 0) {
 //   console.log("Bar");
 // }
-const cars = ["BMW", "Volvo", "Saab", "Ford"];
+// const cars = ["BMW", "Volvo", "Saab", "Ford"];
 let text = "";
 for (let i = 0; i < arr.length; i++) {
   if (arr[i] % 3 === 0 && arr[i] % 5 === 0) {
